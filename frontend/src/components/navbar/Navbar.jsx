@@ -1,23 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import logo from "../../assets/images/logo.png";
 
 function Navbar() {
   return (
     <nav>
-      <NavLink to="/Home">
-        <img src={logo} alt="" />
-      </NavLink>
+      <img src={logo} alt="" />
       <ul>
         <li>
-          <NavLink to="/Jeu">Jeu</NavLink>
+          <a href="test.com">Jeu</a>
         </li>
         <li>
-          <NavLink to="/Contact">Contact</NavLink>
+          <a href="test.com">Contact</a>
         </li>
         <li>
-          <NavLink to="/Equipe">Equipe</NavLink>
+          <a href="test.com">Equipe</a>
         </li>
       </ul>
     </nav>
