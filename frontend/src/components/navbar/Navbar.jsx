@@ -8,7 +8,7 @@ function Navbar() {
       <img src={logo} alt="" />
       <ul>
         <li>
-          <a href="test.com">Jeu</a>
+          <a href="#content">Jeu</a>
         </li>
         <li>
           <a href="#titleForm">Contact</a>
