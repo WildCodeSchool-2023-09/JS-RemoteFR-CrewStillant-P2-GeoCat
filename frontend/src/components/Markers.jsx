@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
+// import data from "./src/data/data.json";
+import popUimagearray from "../data/data.json";
 
 function Markers() {
   // créaton de marqueurs stylisés
@@ -10,110 +12,6 @@ function Markers() {
     iconUrl: "./src/assets/pattecoeur.png",
     iconSize: [38, 38],
   });
-  // création d'un tableau pour y stocker les images des popups de la carte
-  const popUp = [
-    {
-      id: 1,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 2,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 3,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 4,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 5,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 6,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 7,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 8,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 9,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 10,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 11,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 12,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 13,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 14,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 15,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 16,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 17,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 18,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 19,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-    {
-      id: 20,
-      imageArr: "./src/assets/paris-3eme.jpg",
-      imageAnat: "./src/assets/AnatbebeGeocat.jpg",
-    },
-  ];
-
   // création de la state pour stocker une api
   const [arrParis, setArrParis] = useState(null);
 
@@ -147,22 +45,13 @@ function Markers() {
               >
                 <Popup>
                   <img
-                    src={popUp.at(index).imageAnat}
+                    src={popUimagearray.at(index).imageAnat}
                     alt="imageAnat"
                     width="200px"
                     height="200px"
                   />
                 </Popup>
               </Marker>
-              //   <span key={d.c_ar}>
-              //     <p>
-              //       {index}------
-              //       {/* <img src="{popUp[index].imageAnat}" alt="imageAnat" /> */}
-              //       <img src={popUp[index].imageArr} alt="imageArr" />
-              //       {d.geom_x_y.lat},{d.geom_x_y.lon}
-              //     </p>
-              //     {d.geom_x_y.lat} {d.geom_x_y.lon}
-              //   </span>
             ))}
         </div>
       </MapContainer>
