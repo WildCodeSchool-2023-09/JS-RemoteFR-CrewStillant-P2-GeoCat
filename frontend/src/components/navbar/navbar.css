@@ -11,6 +11,9 @@ nav {
   align-items: stretch;
   background-color: #8e80e8;
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 nav ul {
