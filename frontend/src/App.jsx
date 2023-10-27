@@ -8,10 +8,10 @@ import CardList from "./components/team/CardList";
 
 function App() {
   return (
-    <div className="container"> 
-    <Navbar />
-      <Markers /> 
-    <CardList />
+    <div className="container">
+      <Navbar />
+      <Markers />
+      <CardList />
     </div>
   );
 }
