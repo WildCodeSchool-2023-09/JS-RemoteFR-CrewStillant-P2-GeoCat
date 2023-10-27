@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function Card({ srcImg, title, description }) {
   return (
-    <div className="content">
+    <div className="content" id="content">
       <div className="cardContainer">
         <div className="imgContainer">
           <img src={srcImg} alt="icon" />

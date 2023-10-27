@@ -39,4 +39,6 @@ ul li a {
 }
 ul li a:not(.active):hover {
   background-color: #906ae1;
+  color: #d9d9d9;
+  opacity: 0.5;
 }

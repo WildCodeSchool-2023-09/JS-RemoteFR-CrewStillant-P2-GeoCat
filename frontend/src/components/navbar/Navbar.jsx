@@ -11,10 +11,10 @@ function Navbar() {
           <a href="test.com">Jeu</a>
         </li>
         <li>
-          <a href="test.com">Contact</a>
+          <a href="#titleForm">Contact</a>
         </li>
         <li>
-          <a href="test.com">Equipe</a>
+          <a href="#content">Equipe</a>
         </li>
       </ul>
     </nav>
