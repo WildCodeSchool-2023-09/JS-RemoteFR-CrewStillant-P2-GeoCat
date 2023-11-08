@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .cardListContainer {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-auto-columns: 350px 350px;
+    place-content: center;
+    place-items: center;
+    gap: 10rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cardListContainer {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-auto-columns: 350px 350px 350px;
+    place-content: center;
+    place-items: center;
+    gap: 10rem;
+  }
+}

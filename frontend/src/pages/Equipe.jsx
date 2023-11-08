@@ -1,7 +1,8 @@
 import React from "react";
+import CardList from "../components/team/CardList";
 
 function Equipe() {
-  return <div>Equipe</div>;
+  return <CardList />;
 }
 
 export default Equipe;
