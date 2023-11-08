@@ -12,13 +12,13 @@ function Navbar() {
       </NavLink>
       <ul>
         <li>
-          <NavLink to="/Jeu">Jeu</NavLink>
+          <NavLink to="/game">Jeu</NavLink>
         </li>
         <li>
-          <NavLink to="/Contact">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
-          <NavLink to="/Equipe">Equipe</NavLink>
+          <NavLink to="/team">Equipe</NavLink>
         </li>
       </ul>
     </nav>
