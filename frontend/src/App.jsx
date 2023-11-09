@@ -2,7 +2,7 @@ import "./App.css";
 import "./style.css";
 import "leaflet/dist/leaflet.css";
 import React from "react";
-import Markers from "./components/Markers";
+import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <div className="container">
       <Navbar />
       <Markers />
+
     </div>
   );
 }
