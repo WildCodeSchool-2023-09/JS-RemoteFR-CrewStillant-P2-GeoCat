@@ -15,7 +15,7 @@ function Modal({ setModal }) {
           qui se promène dans les différents arrondissements de Paris <br />{" "}
           Vous aurez des indices en haut de votre page, pour vous aider à le
           retrouver. <br /> Vous trouverez aussi sur le bas de votre page le
-          nombre de clics qui vous restent.{" "}
+          nombre de clics qu'il vous reste.{" "}
         </p>
         <button type="button" onClick={closeModal}>
           X
