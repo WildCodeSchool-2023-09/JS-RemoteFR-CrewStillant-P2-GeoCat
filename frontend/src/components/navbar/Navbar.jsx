@@ -12,7 +12,10 @@ function Navbar() {
       </NavLink>
       <ul>
         <li>
-          <NavLink to="/game">Jeu</NavLink>
+          <NavLink to="/">Jeu</NavLink>
+        </li>
+        <li>
+          <NavLink to="/game">Tutorial</NavLink>
         </li>
         <li>
           <NavLink to="/contact">Contact</NavLink>
