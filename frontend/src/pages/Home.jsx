@@ -1,7 +1,7 @@
 import React from "react";
+import Markers from "../components/Markers";
 
 function Home() {
-  return <div>Home</div>;
+  return <Markers />;
 }
-
 export default Home;
