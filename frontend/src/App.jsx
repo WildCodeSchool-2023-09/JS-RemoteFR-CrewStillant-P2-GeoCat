@@ -10,8 +10,6 @@ function App() {
     <div className="container">
       <Navbar />
       <Outlet />
-
-    </div>
   );
 }
 export default App;
