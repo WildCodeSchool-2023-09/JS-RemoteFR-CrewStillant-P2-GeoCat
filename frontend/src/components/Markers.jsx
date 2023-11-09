@@ -1,31 +1,19 @@
 import "../style.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import PropTypes, { shape } from "prop-types";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
-// import data from "./src/data/data.json";
-import popUimagearray from "../data/data.json";
+import popUimagearray from "../data/popupImagesArray.json";
 
-function Markers() {
-  // créaton de marqueurs stylisés
+function Markers({ arrParis, pictureAnatorParis }) {
+  // création de marqueurs stylisés
   const customIcon = new Icon({
     iconUrl: "./src/assets/pattecoeur.png",
     iconSize: [38, 38],
   });
-  // création de la state pour stocker une api
-  const [arrParis, setArrParis] = useState(null);
-
-  useEffect(() => {
-    fetch(
-      "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arrondissements/records?limit=20"
-    )
-      .then((res) => res.json())
-      .then((data) => setArrParis(data));
-  }, []);
-
   return (
     arrParis && (
-      // création du MapContainer et du TileLayer, indispensable au bon affichage de la carte
       <MapContainer center={[48.8566, 2.3522]} zoom={13}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -43,14 +31,25 @@ function Markers() {
                 position={[d.geom_x_y.lat, d.geom_x_y.lon]}
                 icon={customIcon}
               >
-                <Popup>
-                  <img
-                    src={popUimagearray.at(index).imageAnat}
-                    alt="imageAnat"
-                    width="200px"
-                    height="200px"
-                  />
-                </Popup>
+                {d.l_ar === pictureAnatorParis.district ? (
+                  <Popup>
+                    <img
+                      src={popUimagearray.at(index).imageAnat}
+                      alt="imageAnat"
+                      width="200px"
+                      height="200px"
+                    />
+                  </Popup>
+                ) : (
+                  <Popup>
+                    <img
+                      src={popUimagearray.at(index).imageArr}
+                      alt="imageAnat"
+                      width="200px"
+                      height="200px"
+                    />
+                  </Popup>
+                )}
               </Marker>
             ))}
         </div>
@@ -58,5 +57,20 @@ function Markers() {
     )
   );
 }
+
+Markers.propTypes = {
+  arrParis: PropTypes.shape({
+    results: PropTypes.arrayOf(shape),
+  }),
+  pictureAnatorParis: PropTypes.shape({
+    district: PropTypes.string,
+  }).isRequired,
+};
+
+Markers.defaultProps = {
+  arrParis: {
+    results: null,
+  },
+};
 
 export default Markers;

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "0",
+    "district": "4ème Ardt",
+    "hint1": "Admirer la beauté de Notre-Dame est une étape essentielle du voyage d'Anat.",
+    "hint2": "Direction la Mairie de Paris pour Anat afin de se plaindre de la taille des surmulots !",
+    "hint3": "La rue des rosiers, célèbre pour son attentat et les falafels, est un lieu à visiter.",
+    "hint4": "Artiste dans l'âme, Anat se rends au Centre National d'Art et de Culture.",
+    "hint5": "Rendant hommage à notre Bon Roi, Anate compte parcourir l'Ile Saint-Louis"
+  },
+  {
+    "id": "1",
+    "district": "20ème Ardt",
+    "hint1": "Profitant de son après-midi, Anat se ballade dans le cimetière du Père-Lachaise.",
+    "hint2": "Anat est impressionné par la taille de l'église Notre-Dame-de-la-Croix.",
+    "hint3": "Pour admirer des oeuvres de street-art, Anat se rends au Belvédère de Belleville.",
+    "hint4": "Pas très entoushiaste à cause du nom, Anat décide quand même de faire un tour aux Puces de Montreuil.",
+    "hint5": "Dernière séance shopping de son périle, Anat échoue au Printemps Nation."
+  },
+  {
+    "id": "2",
+    "district": "1er Ardt",
+    "hint1": "Le prénom Anat vient d'Egypte, elle est surement partie explorer la Pyramide de Paris !",
+    "hint2": "Florent Pagny en fait une chanson sur un arrêt de metro de cet arrondissement.",
+    "hint3": "C'est l'arrondissement à visiter si vous souhaitez découvrir la Sainte-Chapelle et sa collection de reliques.",
+    "hint4": "Anat se trouve actuellement dans le coeur de Paris",
+    "hint5": "Le palais de justice n'est pas loin, Anat à interêt à se tenir à carreau !"
+  },
+  {
+    "id": "3",
+    "district": "8ème Ardt",
+    "hint1": "Parcequ'elle connait un Garde Républicain, Anat a pu visiter le Palais de l'Elysée",
+    "hint2": "L'obélisque de la Concorde, qui vient d'Egypte comme Anat, lui a fait beaucoup d'effet !",
+    "hint3": "Un peu de shooping sur les Champs Elysées avant de rentrer à la maison.",
+    "hint4": "Un nouveau parc à visiter, le Parc Monceau !",
+    "hint5": "Etape obligatoire de la visite d'Anat : l'Arc de Triomphe qui semble érigé pour célébrer sa venue"
+  },
+  {
+    "id": "4",
+    "district": "15ème Ardt",
+    "hint1": "Vaugiraaaaaard, mais ça ressemble à une blague de Coluche qu'a entendu Anat ça!",
+    "hint2": "Grande fan de nanards français, Anat part visiter la Tour Montparnasse.",
+    "hint3": "On a aperçu Anat se frotter contre la bouche de Metro de la station Javel, typique d'un chat.",
+    "hint4": "On trouve des ponts partout dans cet arrondissement se dit Anat, dont le célèbre Mirabeau.",
+    "hint5": "Anat se rends à Paris Expo Porte de Versailles, curieuse de savoir si on y expose ses photos."
+  },
+  {
+    "id": "5",
+    "district": "2ème Ardt",
+    "hint1": "Pensant rencontrer Denis, Anat s'est rendu au Palais Brongniart.",
+    "hint2": "Anat a adoré visiter le Département des Monnaies et médailles et antiques de la Bibliothéque Nationale.",
+    "hint3": "Visiter la tour médiévale de Jean-sans-peur est assez ironique pour Anat, qui a peur de tout et rien.",
+    "hint4": "Une petite toile, ça vous dit ? Direction le Grand Rex avec un chat, même si c'est un chien normalement !",
+    "hint5": "Anat rêve d'un costume à sa taille et rien de mieux que le Sentier pour ça !"
+  },
+  {
+    "id": "6",
+    "district": "17ème Ardt",
+    "hint1": "Anat visite la cité des Fleurs, rien de plus normal quand on est la plus belle plante.",
+    "hint2": "Pensant pouvoir retirer quelques croquettes de son compte, Anat va faire un tour à la Banque de France.",
+    "hint3": "Pour se cultiver, Anat se rends à une projection d'arts et d'essai au Cinéma des Cinéastes.",
+    "hint4": "Découvrir des produits frais dans le plus anciens marché couvert de Paris, c'est ironique se dit Anat.",
+    "hint5": "Dernière visite culturelle dans cet arrondissement pour Anat, le musée national Jean-Jacques Henner."
+  },
+  {
+    "id": "7",
+    "district": "18ème Ardt",
+    "hint1": "après une longue marche, Anat peut enfin visiter la Basilique du Sacré-Coeur où repose Saint Denis.",
+    "hint2": "Anat se promène autour de la butte de Montmartre et en profite pour se faire peindre par les artistes ambulants",
+    "hint3": "Griffes dehors, Anat se promène dans le quartier de Cligancourt",
+    "hint4": "Attiré par le nom, Anat prends un verre de lait dans le Cinéma-Bar Le Louxor.",
+    "hint5": "Anat visite le cimetière de Montmartre."
+  },
+  {
+    "id": "8",
+    "district": "13ème Ardt",
+    "hint1": "Se léchant les babines à l'idée d'un bon canard laqué, Anat visite le célébre quartier chinois",
+    "hint2": "La butte aux cailles, ça laisse rêveur Anat !",
+    "hint3": "Les gobelins, ça parle à Anat qui y ressemble pas mal dans son comportement !",
+    "hint4": "Le quartier de Paris Rives Gauche, chanté par Alain Souchon, c'est dans cet arrondissement",
+    "hint5": "Anat passe un peu de temps à la Bibliothéque Nationale françois mitterand."
+  },
+  {
+    "id": "9",
+    "district": "14ème Ardt",
+    "hint1": "Le parc Montsouris ? Anat a tout simplement foncé vers cette espace vert en entendant son nom !",
+    "hint2": "Anat a passé un moment a admirer les lions de Denfert Rochereau.",
+    "hint3": "Après un moment dans le vert du 12ème, Anat explore maintenant les catacombes de Paris !",
+    "hint4": "Forte de ses racines bretonnes, Anat visite le quartier des crèpes au froment. Yec'hed mat !",
+    "hint5": "Anat ne fut pas très impressionné par les oeuvres de la Fondation Cartier."
+  },
+  {
+    "id": "10",
+    "district": "16ème Ardt",
+    "hint1": "Arrondissement de riches oblige, Anat a sorti son plus beau collier à paillettes.",
+    "hint2": "Anat profite d'un nouvel espace vert, le bois de Boulogne, malgré tout ces chiens en liberté.",
+    "hint3": "Emerveillée par tout ces poissons en mouvement, Anat passe quelques heures à L'Aquarium de Paris",
+    "hint4": "Se disant qu'avoir une petite pochette assortie à son pelage serait bien, Anat fonce à la Fondation Louis Vuitton.",
+    "hint5": "Sportive qui aime courrir après une petite balle, Anat ne pouvait pas rater un match au Parc des Princes !"
+  },
+  {
+    "id": "11",
+    "district": "9ème Ardt",
+    "hint1": "Pensant se faire shampooiner, Anat a pris un billet pour l'Opéra Garnier.",
+    "hint2": "Encore du shopping ! Cette fois on dévalise les Galeries Lafayette.",
+    "hint3": "Au nord de cet arrondissement, la station et le quartier Pigalle.",
+    "hint4": "Afin de rapporter une jolie babiole, Anat s'attarde à la salle des ventes de l'Hôtel Drouot.",
+    "hint5": "Arrêt à la station de métro Cadet, comme Anat qui est la petite soeur à la maison."
+  },
+  {
+    "id": "12",
+    "district": "11ème Ardt",
+    "hint1": "C'est l'arrondissement idéal pour sortir la nuit, sauf pour Anat qui préfère dormir.",
+    "hint2": "On trouve ici la mondialement célèbre Place de la Bastille.",
+    "hint3": "Anat visite aussi l'Atelier des Lumières même si c'est elle qui brille le plus.",
+    "hint4": "Pour se détendre, Anat a décidé d'assister à un spectacle au théâtre de la main d'or.",
+    "hint5": "Dérangée par des manifestants bruyants, Anat pense à changer rapidement d'arrondissement."
+  },
+  {
+    "id": "13",
+    "district": "7ème Ardt",
+    "hint1": "Le Champs de Mars, un endroit parfait pour une guerriére comre Anat !",
+    "hint2": "La Tour Eiffel et ses centaines de marches : épuisant à grimper pour un chat !",
+    "hint3": "Anat admire la Flamme de la Liberté sur le pont de l'Alma.",
+    "hint4": "En passant par cet arrondissement, Anat se rends sur la tombe de l'Empereur.",
+    "hint5": "Le Bon Marché et ses denrées alimentaires, un paradis pour Anat et son bidou !"
+  },
+  {
+    "id": "14",
+    "district": "10ème Ardt",
+    "hint1": "La Gare du Nord, c'est comme à la Maison pour Anat !",
+    "hint2": "Attiré par le nom, Anat découvre le marché Saint Quentin.",
+    "hint3": "Petite pause le long du Canal Saint-Martin, une sieste bienvenue.",
+    "hint4": "Découverte de la porte Saint-Denis pour Anat, impressionnée par sa taille.",
+    "hint5": "Le Manoir de Paris, une maison hantée, ce n'est pas très effrayant pour un chat qui voit les fantomes !"
+  },
+  {
+    "id": "15",
+    "district": "3ème Ardt",
+    "hint1": "Après un arrêt à la station Arts et Métiers, Anat se dirige à pattes vers la sation Réaumur-Sébastopol.",
+    "hint2": "Direction les Archives Nationales !",
+    "hint3": "Au Musée Picasso, Anat à trouvé beaucoup de ressemblances entre les tableaux et l'etat de sa litière à la maison.",
+    "hint4": "Attiré par l'odeur des produits frais, Anat dine au Marché des Enfants Rouges.",
+    "hint5": "On trouve dans cet arrondissement la plus vieille maison de Paris."
+  },
+  {
+    "id": "16",
+    "district": "6ème Ardt",
+    "hint1": "Pour se cultiver, Anat décide d'aller voir une pièce au Théatre de l'Odéon.",
+    "hint2": "A l'école des Beaux-Arts, Anat sert de modèle vivant mais endormi.",
+    "hint3": "Pour se détendre, Anat fait un petit tour dans le magnifique jardin du Luxembourg.",
+    "hint4": "C'est ici que l'on peut admirer la fontaine de Saint-Michel.",
+    "hint5": "Anat prends un gouter bien mérité au café de Flore."
+  },
+  {
+    "id": "17",
+    "district": "12ème Ardt",
+    "hint1": "Se revant Capitaine de bateau, Anat écume le port de l'Arsenal.",
+    "hint2": "Le bois de Vincennes, le plus grand espace vert de Paris, cela fera une jolie promenade pour Anat",
+    "hint3": "Anat profite de la promenade de la coulée verte, un autre espace très vert de cet arrondissement",
+    "hint4": "Découvrir l'horloge de la gare de Lyon rappelle à Anat qu'il est l'heure de déjeuner !",
+    "hint5": "Histoire de faire des emplettes, Anat se rends au Bercy Village."
+  },
+  {
+    "id": "18",
+    "district": "5ème Ardt",
+    "hint1": "Anat visite le plus vieux quartie de la Capitale.",
+    "hint2": "On est jamais trop intelligent ! Anat suit donc quelques cours à la Sorbonne aujourd'hui.",
+    "hint3": "Anat part verifier si on trouve bien des sorcières dans la rue Mouffetard",
+    "hint4": "Anat profite de son après-midi pour faire une longue visite au musée d'Histoire Naturelle",
+    "hint5": "En visite au Panthéon, Anat se demande si les humains ont déjà pensé à lui faire une place."
+  },
+  {
+    "id": "19",
+    "district": "19ème Ardt",
+    "hint1": "La Cité des Sciences, c'est parfait pour Anat qui adore admirer la physique des croquettes dans son bol.",
+    "hint2": "Anat reverait de donner un concert au Zenith avec sa magnifique voix.",
+    "hint3": "Excursion au parc de la Vilette pour Anat cet après-midi.",
+    "hint4": "Seance shopping pour Anat au centre commercial Vill'Up.",
+    "hint5": "Anat visite l'Argonate, un vrai sous-marin des années 50."
+  }
+]
