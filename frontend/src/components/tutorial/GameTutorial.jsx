@@ -12,10 +12,7 @@ function GameTutorial() {
     <div className="gameContent">
       <div className="gameContainer">
         <MovingText type="bounce" duration="2000ms" timing="ease" iteration="1">
-          <h1>
-            <span>GeoCat</span> Clique sur <span>Tutorial</span> pour comprendre
-            son fonctionnement
-          </h1>
+          <h1>GeoCat Clique sur Tutorial pour comprendre son fonctionnement</h1>
         </MovingText>
         <MovingText
           type="fadeIn"

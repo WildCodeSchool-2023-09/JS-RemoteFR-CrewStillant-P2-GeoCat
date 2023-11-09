@@ -3,9 +3,9 @@ import "./modal.css";
 import PropTypes from "prop-types";
 
 function Modal({ setModal }) {
-  function closeModal() {
+  const closeModal = () => {
     setModal(false);
-  }
+  };
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -24,7 +24,7 @@ function Modal({ setModal }) {
   );
 }
 Modal.propTypes = {
-  setModal: PropTypes.bool.isRequired,
+  setModal: PropTypes.func.isRequired,
 };
 
 export default Modal;
