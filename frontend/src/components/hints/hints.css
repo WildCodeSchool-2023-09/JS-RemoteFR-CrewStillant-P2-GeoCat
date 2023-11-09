@@ -1,0 +1,4 @@
+.hintsdisplay {
+  display: flex;
+  flex-direction: column;
+}
