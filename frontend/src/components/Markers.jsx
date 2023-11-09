@@ -4,7 +4,6 @@ import PropTypes, { shape } from "prop-types";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
-// import data from "./src/data/....json";
 import popUimagearray from "../data/popupImagesArray.json";
 
 function Markers({ arrParis, pictureAnatorParis }) {
@@ -15,7 +14,6 @@ function Markers({ arrParis, pictureAnatorParis }) {
   });
   return (
     arrParis && (
-      // création du MapContainer et du TileLayer, indispensable au bon affichage de la carte
       <MapContainer center={[48.8566, 2.3522]} zoom={13}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

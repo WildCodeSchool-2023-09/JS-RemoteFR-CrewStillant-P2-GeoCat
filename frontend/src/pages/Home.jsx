@@ -4,9 +4,7 @@ import Hints from "../components/hints/Hints";
 import parisLocationHints from "../data/parisLocationHints.json";
 
 function Home() {
-  // création de la state pour stocker une api
   const [arrParis, setArrParis] = useState(null);
-
   useEffect(() => {
     fetch(
       "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arrondissements/records?limit=20"
@@ -23,9 +21,6 @@ function Home() {
   const [pictureAnatorParis, setPictureAnatorParis] = useState(
     parisLocationHints[districtIndex]
   );
-  // ces console.log servent à tricher dans le jeu et est donc indispensable pour la branche dev
-  // console.log(districtIndex);
-  // console.log(parisLocationHints[districtIndex].district);
   return (
     arrParis && (
       <div>

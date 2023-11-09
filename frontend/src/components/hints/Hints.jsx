@@ -17,7 +17,6 @@ function Hints({ pictureAnatorParis }) {
   const gettingRandomNumberupTo5 = (max) => {
     randomIndex = Math.floor(Math.random() * max);
   };
-  // merci Ayoub pour l'aide ^^
   const indexNumbers = new Set();
   while (indexNumbers.size < 3) {
     gettingRandomNumberupTo5(5);
@@ -27,7 +26,6 @@ function Hints({ pictureAnatorParis }) {
   for (const index of newArray) {
     arrayHintstoDisplay.push(newHintsArray[index]);
   }
-  // pour l'instant on code en dur les hints mais on pourra dans le futur les rendre plus dynamiques avec des states en fonction du click bouton
   return (
     <div className="hintsdisplay">
       <p>{parisLocationHints[2].hint1} </p>
