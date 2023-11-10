@@ -1,0 +1,37 @@
+.gameContent {
+  height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 800px;
+}
+.gameContainer h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.gameContainer h1 span {
+  color: #906ae1;
+}
+.gameContainer button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: #906ae1;
+  color: #d9d9d9;
+  border: 1px solid #906ae1;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.gameContainer button:hover {
+  background-color: #d9d9d9;
+  border: 1px solid #906ae1;
+  color: #906ae1;
+  transform: translateY(-0.5rem);
+}

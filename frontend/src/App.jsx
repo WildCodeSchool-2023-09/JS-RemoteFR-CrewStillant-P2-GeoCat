@@ -1,16 +1,16 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
+import "./style.css";
+import "leaflet/dist/leaflet.css";
+import React from "react";
 import Navbar from "./components/navbar/Navbar";
-import CardList from "./components/team/CardList";
-import Form from "./components/contact/Form";
 
 function App() {
   return (
     <div className="container">
       <Navbar />
-      <CardList />
-      <Form />
+      <Outlet />
     </div>
   );
 }
-
 export default App;

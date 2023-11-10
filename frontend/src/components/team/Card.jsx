@@ -1,6 +1,6 @@
 import React from "react";
-import "./card.css";
 import PropTypes from "prop-types";
+import "./card.css";
 
 function Card({ srcImg, title, description }) {
   return (
