@@ -1,17 +1,16 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import "./style.css";
 import "leaflet/dist/leaflet.css";
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
-import Markers from "./components/Markers";
 
 function App() {
   return (
     <div className="container">
       <Navbar />
-      <Markers />
+      <Outlet />
     </div>
   );
 }
-
 export default App;

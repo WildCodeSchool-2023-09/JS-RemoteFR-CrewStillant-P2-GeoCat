@@ -40,3 +40,8 @@ ul li a {
 ul li a:not(.active):hover {
   background-color: #906ae1;
 }
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  ul li a {
+    margin: 0 1rem;
+  }
+}
