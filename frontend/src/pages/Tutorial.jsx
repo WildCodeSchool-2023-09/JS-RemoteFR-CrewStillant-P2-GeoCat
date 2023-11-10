@@ -1,8 +1,8 @@
 import React from "react";
 import GameTutorial from "../components/tutorial/GameTutorial";
 
-function Game() {
+function Tutorial() {
   return <GameTutorial />;
 }
 
-export default Game;
+export default Tutorial;

@@ -15,7 +15,7 @@ function Navbar() {
           <NavLink to="/">Jeu</NavLink>
         </li>
         <li>
-          <NavLink to="/game">Tutorial</NavLink>
+          <NavLink to="/tutorial">Tutorial</NavLink>
         </li>
         <li>
           <NavLink to="/contact">Contact</NavLink>
