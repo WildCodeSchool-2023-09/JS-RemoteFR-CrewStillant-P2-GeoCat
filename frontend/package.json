@@ -11,7 +11,8 @@
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
     "react-moving-text": "^0.0.7",
-    "react-router-dom": "^6.17.0"
+    "react-router-dom": "^6.17.0",
+    "reshake": "^2.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",

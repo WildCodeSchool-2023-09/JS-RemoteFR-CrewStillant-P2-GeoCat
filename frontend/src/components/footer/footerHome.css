@@ -1,0 +1,27 @@
+:root {
+  margin: 0%;
+  grid-gap: 0px;
+}
+.footerHome {
+  background-color: #8e80e8;
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  grid-auto-rows: minmax(auto);
+  grid-gap: 01px;
+  width: auto;
+}
+.hintslefttext {
+  background-color: #8e80e8;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+}
+.hintsleftpicture {
+  grid-column: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-row: 1;
+  background-color: #8e80e8;
+}

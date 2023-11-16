@@ -9,7 +9,6 @@ import Team from "./pages/Team";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
     children: [
       {
