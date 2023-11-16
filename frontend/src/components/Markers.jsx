@@ -1,15 +1,16 @@
 import "../style.css";
 import "leaflet/dist/leaflet.css";
 import React from "react";
+// import toastify
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import PropTypes, { shape } from "prop-types";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import popUimagearray from "../data/popupImagesArray.json";
 import { useRemainingTries } from "../contexts/RemainingTriesContext";
 import parisLocationHints from "../data/parisLocationHints.json";
-// import toastify
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 // importing some pictures
 import iconheartcatpaw from "../assets/pattecoeur.png";
 import eastereggArctic from "../assets/antarctique.jpg";

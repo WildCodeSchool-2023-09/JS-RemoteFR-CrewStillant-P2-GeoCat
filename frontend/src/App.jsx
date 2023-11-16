@@ -1,11 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import "./style.css";
 import "leaflet/dist/leaflet.css";
 import { RemainingProvider } from "./contexts/RemainingTriesContext";
 import Navbar from "./components/navbar/Navbar";
-import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
