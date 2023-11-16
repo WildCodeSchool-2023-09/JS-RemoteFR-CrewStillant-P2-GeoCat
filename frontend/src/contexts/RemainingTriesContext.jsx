@@ -10,14 +10,12 @@ export function RemainingProvider({ children }) {
     () => ({ remainingTries, setRemainingTries }),
     [remainingTries, setRemainingTries]
   );
-
   return (
     <RemainingContext.Provider value={RemainingContextValues}>
       {children}
     </RemainingContext.Provider>
   );
 }
-
 RemainingProvider.propTypes = {
   children: PropTypes.func.isRequired,
 };

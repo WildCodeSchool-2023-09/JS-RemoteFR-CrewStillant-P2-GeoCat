@@ -22,7 +22,6 @@ function Home() {
   const [pictureAnatorParis, setPictureAnatorParis] = useState(
     parisLocationHints[districtIndex]
   );
-
   const newHintsArray = [
     pictureAnatorParis.hint1,
     pictureAnatorParis.hint2,
@@ -45,7 +44,10 @@ function Home() {
   return (
     arrParis && (
       <div>
-        <Hints newHintsArray={newHintsArray} />
+        <Hints
+          newHintsArray={newHintsArray}
+          setPictureAnatorParis={setPictureAnatorParis}
+        />
         <Markers
           arrParis={arrParis}
           pictureAnatorParis={pictureAnatorParis}

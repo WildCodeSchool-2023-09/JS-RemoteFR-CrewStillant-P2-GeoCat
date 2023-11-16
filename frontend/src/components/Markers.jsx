@@ -7,6 +7,9 @@ import { Icon } from "leaflet";
 import popUimagearray from "../data/popupImagesArray.json";
 import { useRemainingTries } from "../contexts/RemainingTriesContext";
 import parisLocationHints from "../data/parisLocationHints.json";
+// import toastify
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // importing some pictures
 import iconheartcatpaw from "../assets/pattecoeur.png";
 import eastereggArctic from "../assets/antarctique.jpg";
@@ -21,8 +24,18 @@ function Markers({ arrParis, pictureAnatorParis, setPictureAnatorParis }) {
   // fonction pour remettre à zero quand on gagne ou perds le jeu
   const resetTheGame = () => {
     if (remainingTries === 0) {
-      alert(
-        "Vous venez de perdre votre partie de GeoCat ! Anat a eu le temps de se promener dans tout un arrondissement de Paris en se payant des couettes de luxe et du saumon, tout ça avec votre carte bleue en plus ! GeoCat se relancera tout seul très rapidement, pas d'inquiétude ;)"
+      toast.info(
+        "Vous venez de perdre votre partie de GeoCat ! Anat a eu le temps de se promener dans tout un arrondissement de Paris en se payant des couettes de luxe et du saumon, tout ça avec votre carte bleue en plus ! GeoCat se relancera tout seul très rapidement, pas d'inquiétude",
+        {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        }
       );
       setTimeout(() => {}, 15000);
       setRemainingTries(3);
@@ -41,8 +54,18 @@ function Markers({ arrParis, pictureAnatorParis, setPictureAnatorParis }) {
   const iswinorlose = (d) => {
     if (remainingTries > 0 && d.l_ar === pictureAnatorParis.district) {
       playVictory();
-      alert(
-        "Bravo vous avez trouvé Anat ! Cependant il est presque 16h, il est donc temps de rentrer à la maison et de la nourrir !"
+      toast.info(
+        "Bravo vous avez trouvé Anat ! Cependant il est presque 16h, il est donc temps de rentrer à la maison et de la nourrir !",
+        {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        }
       );
     }
     if (remainingTries > 0 && d.l_ar !== pictureAnatorParis.district) {
@@ -62,7 +85,6 @@ function Markers({ arrParis, pictureAnatorParis, setPictureAnatorParis }) {
     iconUrl: iconbearpaw,
     iconSize: [38, 38],
   });
-
   return (
     arrParis && (
       <MapContainer center={[48.8566, 2.3522]} zoom={13}>
@@ -132,7 +154,6 @@ function Markers({ arrParis, pictureAnatorParis, setPictureAnatorParis }) {
     )
   );
 }
-
 Markers.propTypes = {
   arrParis: PropTypes.shape({
     results: PropTypes.arrayOf(shape),
@@ -142,11 +163,9 @@ Markers.propTypes = {
   }).isRequired,
   setPictureAnatorParis: PropTypes.func.isRequired,
 };
-
 Markers.defaultProps = {
   arrParis: {
     results: null,
   },
 };
-
 export default Markers;
