@@ -10,12 +10,12 @@ import { Icon } from "leaflet";
 import popUimagearray from "../data/popupImagesArray.json";
 import { useRemainingTries } from "../contexts/RemainingTriesContext";
 import parisLocationHints from "../data/parisLocationHints.json";
-
 // importing some pictures
 import iconheartcatpaw from "../assets/pattecoeur.png";
 import eastereggArctic from "../assets/antarctique.jpg";
 import eastereggScandinavia from "../assets/lenaleeblackmetal.jpg";
 import iconbearpaw from "../assets/bearpaw.png";
+import iconezero from "../assets/iconezero.png";
 // importing sounds
 import anatshortmeow from "../assets/sounds/anataudio.mp3";
 import anatlongmeow from "../assets/sounds/anataudio2.mp3";
@@ -86,6 +86,10 @@ function Markers({ arrParis, pictureAnatorParis, setPictureAnatorParis }) {
     iconUrl: iconbearpaw,
     iconSize: [38, 38],
   });
+  const customZero = new Icon({
+    iconUrl: iconezero,
+    iconSize: [38, 38],
+  });
   return (
     arrParis && (
       <MapContainer center={[48.8566, 2.3522]} zoom={13}>
@@ -93,6 +97,22 @@ function Markers({ arrParis, pictureAnatorParis, setPictureAnatorParis }) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        {/* remise à zero du jeu */}
+        <Marker
+          position={[48.873496506, 2.27583223]}
+          icon={customZero}
+          eventHandlers={{
+            click: () => {
+              setRemainingTries(3);
+              const newDistrictIndex = Math.floor(
+                Math.random() * parisLocationHints.length + 1
+              );
+              setPictureAnatorParis(parisLocationHints[newDistrictIndex]);
+            },
+          }}
+        >
+          <Popup>Je suis là pour remettre le jeu à zéro</Popup>
+        </Marker>
         {/* easteregg n°1 */}
         <Marker position={[-63.3192, -57.8925]} icon={customBearIcon}>
           <Popup>
