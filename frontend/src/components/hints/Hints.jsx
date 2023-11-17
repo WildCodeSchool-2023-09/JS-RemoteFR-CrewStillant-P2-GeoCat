@@ -1,48 +1,86 @@
+import React, { useState } from "react";
+import PropTypes, { shape } from "prop-types";
 import "./hints.css";
-import PropTypes from "prop-types";
-import parisLocationHints from "../../data/parisLocationHints.json";
+import { ShakeLittle } from "reshake";
+import { useRemainingTries } from "../../contexts/RemainingTriesContext";
 
-function Hints({ pictureAnatorParis }) {
-  // je récupère l'index du tableau parisLocationHints avec pictureAnatorParis
-  // je push les 5 hints sur un nouveau tableau
-  const newHintsArray = [
-    pictureAnatorParis.hint1,
-    pictureAnatorParis.hint2,
-    pictureAnatorParis.hint3,
-    pictureAnatorParis.hint4,
-    pictureAnatorParis.hint5,
-  ];
-  let randomIndex = "";
-  const arrayHintstoDisplay = [];
-  const gettingRandomNumberupTo5 = (max) => {
-    randomIndex = Math.floor(Math.random() * max);
+function Hints({ newHintsArray }) {
+  const { remainingTries } = useRemainingTries();
+  const [button1, setButton1] = useState(true);
+  const [button2, setButton2] = useState(false);
+  const [button3, setButton3] = useState(false);
+  const buttondisplayHint1 = () => {
+    setButton1(true);
+    setButton2(false);
+    setButton3(false);
   };
-  const indexNumbers = new Set();
-  while (indexNumbers.size < 3) {
-    gettingRandomNumberupTo5(5);
-    indexNumbers.add(randomIndex);
-  }
-  const newArray = [...indexNumbers];
-  for (const index of newArray) {
-    arrayHintstoDisplay.push(newHintsArray[index]);
-  }
+  const buttondisplayHint2 = () => {
+    setButton1(false);
+    setButton2(true);
+    setButton3(false);
+  };
+  const buttondisplayHint3 = () => {
+    setButton1(false);
+    setButton2(false);
+    setButton3(true);
+  };
+
   return (
-    <div className="hintsdisplay">
-      <p>{parisLocationHints[2].hint1} </p>
-      <span>Indice n°1 : {arrayHintstoDisplay[0]}</span>
-      <span>Indice n°2 : {arrayHintstoDisplay[1]}</span>
-      <span>Indice n°3 : {arrayHintstoDisplay[2]}</span>
+    <div className="divHintsGeneral">
+      <div className="buttontodisplayHints">
+        <ShakeLittle>
+          <button
+            type="button"
+            className="buttonHints"
+            onClick={buttondisplayHint1}
+          >
+            1
+          </button>
+        </ShakeLittle>
+        <ShakeLittle>
+          <button
+            type="button"
+            className={`${
+              remainingTries < 3
+                ? "buttonHints"
+                : "buttonHints buttonNotDisplaying"
+            }`}
+            onClick={buttondisplayHint2}
+          >
+            2
+          </button>
+        </ShakeLittle>
+        <ShakeLittle>
+          <button
+            type="button"
+            className={`${
+              remainingTries < 2
+                ? "buttonHints"
+                : "buttonHints buttonNotDisplaying"
+            }`}
+            onClick={buttondisplayHint3}
+          >
+            3
+          </button>
+        </ShakeLittle>
+      </div>
+      <div className="hintsdisplay">
+        <div className={`${button1 ? "" : "notdisplayingHint"}`}>
+          <p> Indice n°1 : {newHintsArray[0]} </p>
+        </div>
+        <div className={`${button2 ? "" : "notdisplayingHint"}`}>
+          <p> Indice n°2 : {newHintsArray[1]} </p>
+        </div>
+        <div className={`${button3 ? "" : "notdisplayingHint"}`}>
+          <p> Indice n°3 : {newHintsArray[2]} </p>
+        </div>
+      </div>
     </div>
   );
 }
+
 Hints.propTypes = {
-  pictureAnatorParis: PropTypes.shape({
-    hint1: PropTypes.string,
-    hint2: PropTypes.string,
-    hint3: PropTypes.string,
-    hint4: PropTypes.string,
-    hint5: PropTypes.string,
-  }).isRequired,
+  newHintsArray: PropTypes.arrayOf(shape).isRequired,
 };
 
 export default Hints;

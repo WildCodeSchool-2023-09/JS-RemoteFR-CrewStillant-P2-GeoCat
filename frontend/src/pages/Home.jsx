@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Markers from "../components/Markers";
 import Hints from "../components/hints/Hints";
 import parisLocationHints from "../data/parisLocationHints.json";
+import FooterHome from "../components/footer/FooterHome";
 
 function Home() {
   const [arrParis, setArrParis] = useState(null);
@@ -21,15 +22,38 @@ function Home() {
   const [pictureAnatorParis, setPictureAnatorParis] = useState(
     parisLocationHints[districtIndex]
   );
+  const newHintsArray = [
+    pictureAnatorParis.hint1,
+    pictureAnatorParis.hint2,
+    pictureAnatorParis.hint3,
+  ];
+  let randomIndex = "";
+  const arrayHintstoDisplay = [];
+  const gettingRandomNumberupTo5 = (max) => {
+    randomIndex = Math.floor(Math.random() * max);
+  };
+  const indexNumbers = new Set();
+  while (indexNumbers.size < 3) {
+    gettingRandomNumberupTo5(5);
+    indexNumbers.add(randomIndex);
+  }
+  const newArray = [...indexNumbers];
+  for (const index of newArray) {
+    arrayHintstoDisplay.push(newHintsArray[index]);
+  }
   return (
     arrParis && (
       <div>
-        <Hints pictureAnatorParis={pictureAnatorParis} />
+        <Hints
+          newHintsArray={newHintsArray}
+          setPictureAnatorParis={setPictureAnatorParis}
+        />
         <Markers
           arrParis={arrParis}
           pictureAnatorParis={pictureAnatorParis}
           setPictureAnatorParis={setPictureAnatorParis}
         />
+        <FooterHome />
       </div>
     )
   );
